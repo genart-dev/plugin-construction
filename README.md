@@ -4,6 +4,12 @@ Drawing construction guides plugin for [genart.dev](https://genart.dev) — 3D f
 
 Part of [genart.dev](https://genart.dev) — a generative art platform with an MCP server, desktop app, and IDE extensions.
 
+## Examples
+
+![Construction guides montage](test-renders/construction-guides.png)
+
+Source file: [construction-guides.genart](test-renders/construction-guides.genart)
+
 ## Install
 
 ```bash
@@ -151,18 +157,6 @@ Intersection lines between two or more overlapping 3D forms, computed by surface
 | `intersectionStyle` | select | `"solid"` | solid / bold / emphasized |
 | `showFormLabels` | boolean | `false` | Show A/B/C labels |
 | `transitionType` | select | `"hard"` | hard / soft / mixed |
-
-## Test Render
-
-![Construction guides montage](test-renders/construction-guides.png)
-
-16-panel montage showing all layer types with variations:
-- **Row 1**: Box, cylinder, sphere, cone — default rotations with cross-contours and axes
-- **Row 2**: Wedge, egg/ovoid, box (extreme rotation), cylinder (weak-perspective foreshortening)
-- **Row 3**: Cross-contour lines on organic shape, 3-value study, 5-value study (full shadow anatomy), envelope block-in with angles and plumb line
-- **Row 4**: Box+sphere intersection, cylinder+cone intersection (soft), multi-form scene, construction exercise
-
-Regenerate with `node render-test-construction.cjs` (requires `canvas` dev dependency).
 
 ## MCP Tools (8)
 
