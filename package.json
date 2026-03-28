@@ -1,6 +1,6 @@
 {
   "name": "@genart-dev/plugin-construction",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Drawing construction guides plugin for genart.dev — 3D form primitives, cross-contours, value studies, envelopes, and form intersections",
   "type": "module",
   "main": "./dist/index.cjs",

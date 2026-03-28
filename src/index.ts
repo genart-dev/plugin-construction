@@ -4,12 +4,13 @@ import { crossContourLayerType } from "./cross-contour-layer.js";
 import { valueShapesLayerType } from "./value-shapes-layer.js";
 import { envelopeLayerType } from "./envelope-layer.js";
 import { intersectionLayerType } from "./intersection-layer.js";
+import { compoundFormLayerType } from "./compound-form-layer.js";
 import { constructionMcpTools } from "./construction-tools.js";
 
 const constructionPlugin: DesignPlugin = {
   id: "construction",
   name: "Construction Guides",
-  version: "0.1.0",
+  version: "0.2.0",
   tier: "free",
   description:
     "Drawing construction guides: 3D form primitives, cross-contour lines, value/shadow studies, envelope block-ins, and form intersections.",
@@ -20,6 +21,7 @@ const constructionPlugin: DesignPlugin = {
     valueShapesLayerType,
     envelopeLayerType,
     intersectionLayerType,
+    compoundFormLayerType,
   ],
   tools: [],
   exportHandlers: [],
@@ -40,6 +42,8 @@ export { crossContourLayerType } from "./cross-contour-layer.js";
 export { valueShapesLayerType } from "./value-shapes-layer.js";
 export { envelopeLayerType } from "./envelope-layer.js";
 export { intersectionLayerType } from "./intersection-layer.js";
+export { compoundFormLayerType, COMPOUND_PRESETS } from "./compound-form-layer.js";
+export type { CompoundComponent } from "./compound-form-layer.js";
 export { constructionMcpTools } from "./construction-tools.js";
 export {
   rotationMatrix,
